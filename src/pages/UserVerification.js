@@ -15,7 +15,7 @@ const UserVerification = () => {
     const verifyUser = async () => {
       try {
         const data = await axios.post(
-          "http://localhost:8000/api/v1/auth/userVerification",
+          "https://oreby-backend-6xcy.vercel.app/api/v1/auth/userVerification",
           {
             token: token,
           }

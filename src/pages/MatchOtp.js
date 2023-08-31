@@ -20,7 +20,7 @@ const MatchOtp = () => {
     setLoading(true);
 
     const otpData = await axios.post(
-      "http://localhost:8000/api/v1/auth/matchOtp",
+      "https://oreby-backend-6xcy.vercel.app/api/v1/auth/matchOtp",
       {
         otp: otp,
         forgotPassword: localEmail,

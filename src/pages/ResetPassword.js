@@ -20,7 +20,7 @@ const ResetPassword = () => {
     const localEmail = JSON.parse(localStorage.getItem("forgotPassword"));
 
     const resetPasswordData = await axios.post(
-      "http://localhost:8000/api/v1/auth/resetPassword",
+      "https://oreby-backend-6xcy.vercel.app/api/v1/auth/resetPassword",
       {
         email: localEmail,
         newPassword: newPassword,

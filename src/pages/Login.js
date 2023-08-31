@@ -42,7 +42,7 @@ const Login = () => {
     try {
       setLoading(true);
       const userData = await axios.post(
-        "http://localhost:8000/api/v1/auth/login",
+        "https://oreby-backend-6xcy.vercel.app/api/v1/auth/login",
         {
           ...formData,
         }
@@ -89,7 +89,7 @@ const Login = () => {
     try {
       setForgotPassLoading(true);
       const forgotPasswordData = await axios.post(
-        "http://localhost:8000/api/v1/auth/forgotPassword",
+        "https://oreby-backend-6xcy.vercel.app/api/v1/auth/forgotPassword",
         {
           forgotPassword: forgotPassword,
         }
